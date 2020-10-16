@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
@@ -118,4 +119,126 @@
         
     </div>
 </body>
+=======
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        .center{ 
+        text-align: center;
+        font-family: Arial;
+        
+        }
+        .align{
+        text-align: right;
+        font-family: Arial;
+        font-size: large;
+        
+        }
+
+
+
+
+        div.page {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+            grid-template-rows: 1fr 10fr 1fr;
+            grid-template-areas: 'header header' 
+                                 'menu mainContent'
+                                 'footer footer';
+        }
+
+        div.header {
+            background-color: aqua;
+            grid-area: header;
+        }
+
+        div.menu {
+            background-color:white;
+            grid-area: menu;
+        }
+
+        div.mainContent {
+            background-color: white;
+            grid-area: mainContent;
+        }
+
+        div.footer {
+            background-color: lightgrey;
+            grid-area: footer;
+        }
+        h4 {
+        color: black;  
+
+        }
+        
+        .navi {
+        color: red;
+
+        }
+        @media only screen and (max-width: 600px) {
+            div.page {
+                grid-template-columns: 1fr;
+                grid-template-rows: 20px 1fr 4fr 20px;
+                grid-template-areas: 'header' 
+                                     'menu'
+                                     'mainContent'
+                                     'footer';
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <h1 class="center" style="color: white;">My website</h1>
+        </div>
+           <div class="menu">
+           <h4>Navigation</h4>
+           <div class="navi">
+            Hjem <br> Om <br> Kontakt <br>
+        </div>
+        </div>
+        <div class="mainContent">
+        <h2>Homepage</h2>
+        <p>
+           dine terminated way By his may it reasonably Our sake by he Houses more need now His 
+           strictly simplicity humoured met him Felicity said valley evening nay laughing every 
+        </p> 
+
+        <p>
+           up through because no met ten merely ought Sir dependent bred neither kept Subjects 
+           asked besides wound an silent off taste attention inhabiting strangers favourable 
+        </p>
+
+        <p>
+        
+           has offering village Hearts Recommend knows sufficient wife delivered expense real 
+           greatest prevailed giving felicity face of no excuse Money stood shameless good 
+
+           something barton must wants yet so packages wholly to oh hence right up half miss
+           Full On sufficient at is peculiar pleasure Dashwood denoting wish mirth but you  
+        </p>   
+            
+
+        </div>
+        <div class="footer" style="color: white;">
+             <p class="align" >
+              Copyright 2020   
+        
+             </p>
+        </div>
+        
+    </div>
+</body>
+>>>>>>> 388284bbea910b0c18f7909c715ad0f1cc65174c
 </html>
