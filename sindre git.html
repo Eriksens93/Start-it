@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .center {
+            text-align: center;
+            font-family: Arial;
+        }
+
+        .alignRight {
+            text-align: right;
+            font-size: large;
+            font-family: Arial;
+        }
+
+        .arial {
+            font-family: Arial;
+        }
+        .arialRed {
+            font-family: Arial;
+            color: red;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: red;
+        }
+
+        a:hover {
+            color:hotpink;
+        }
+
+        a:active {
+            font-weight: bold;
+        }
+
+        div.page {
+            height: 100vh;          
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 10fr 40px;
+            grid-template-areas: 'header header'
+                                 'menu mainContent'
+                                 'footer footer';
+
+        }
+
+        div.footer {
+            background-color: lightgray;
+            grid-area: footer;
+        }
+
+        div.header {
+            background-color: deepskyblue;
+            grid-area: header;
+        }
+
+        div.menu {
+            grid-area: menu;
+        }
+
+        div.mainContent {
+            grid-area: mainContent;
+        }
+
+        @media only screen and (max-width: 600px) {
+            div.page {
+                grid-template-columns: 1fr;
+                grid-template-rows: 20px 1fr 4fr 20px;
+                grid-template-areas: 'header'
+                    'menu'
+                    'mainContent'
+                    'footer';
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <h1 class="center" style="color: white;">My Website</h1>
+        </div>
+        <div class="menu">
+            <h3 class="arial">Navigation</h3>
+            <a href="" class="arialRed" style="text-decoration: none;">Home</a><br>
+            <a href="" class="arialRed" style="text-decoration: none;">About</a><br>
+            <a href="" class="arialRed" style="text-decoration: none;">Contact</a>
+        </div>
+        <div class="footer">
+            <p class="alignRight" style="color: white">Copyright ©2014 Jake Wright</p>
+        </div>
+        <div class="mainContent">
+            <h2 class="arial">Home page</h2>
+            <p class="arial">
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+            </p>
+            
+            <p class="arial">
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+            </p>
+
+            <p class="arial">
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+                blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla blabla bla bla
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

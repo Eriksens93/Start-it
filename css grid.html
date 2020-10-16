@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        div.page {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 20px 10fr 20px;
+            grid-template-areas: 'menu header' 
+                                 'menu mainContent'
+                                 'footer footer';
+        }
+
+        div.header {
+            background-color: aqua;
+            grid-area: header;
+        }
+
+        div.menu {
+            background-color: aquamarine;
+            grid-area: menu;
+        }
+
+        div.mainContent {
+            background-color: blanchedalmond;
+            grid-area: mainContent;
+        }
+
+        div.footer {
+            background-color: lightgrey;
+            grid-area: footer;
+        }
+
+        @media only screen and (max-width: 600px) {
+            div.page {
+                grid-template-columns: 1fr;
+                grid-template-rows: 20px 1fr 4fr 20px;
+                grid-template-areas: 'header' 
+                                     'menu'
+                                     'mainContent'
+                                     'footer';
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="mainContent">MainContent</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
